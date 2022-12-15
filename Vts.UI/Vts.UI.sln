@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vts.UI", "Vts.UI.csproj", "{7E9455C5-1A59-4ADA-8C31-F2CE1709688C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vts.Entites", "..\Vts.Entites\Vts.Entites.csproj", "{A0CFBC80-54A9-489C-B2AE-CC870818872A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vts.Dal", "..\Vts.Dal\Vts.Dal.csproj", "{DF039144-0572-42FE-8259-288236FF4E2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E9455C5-1A59-4ADA-8C31-F2CE1709688C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E9455C5-1A59-4ADA-8C31-F2CE1709688C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E9455C5-1A59-4ADA-8C31-F2CE1709688C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E9455C5-1A59-4ADA-8C31-F2CE1709688C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0CFBC80-54A9-489C-B2AE-CC870818872A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0CFBC80-54A9-489C-B2AE-CC870818872A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0CFBC80-54A9-489C-B2AE-CC870818872A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0CFBC80-54A9-489C-B2AE-CC870818872A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF039144-0572-42FE-8259-288236FF4E2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF039144-0572-42FE-8259-288236FF4E2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF039144-0572-42FE-8259-288236FF4E2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF039144-0572-42FE-8259-288236FF4E2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F47140D-481E-41DC-A3D9-11F011E183F1}
+	EndGlobalSection
+EndGlobal

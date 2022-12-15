@@ -1,0 +1,6 @@
+D:\DotNet\DataQuantProject\Vts.Entites\bin\Debug\Vts.Entites.dll
+D:\DotNet\DataQuantProject\Vts.Entites\bin\Debug\Vts.Entites.pdb
+D:\DotNet\DataQuantProject\Vts.Entites\obj\Debug\Vts.Entites.csproj.AssemblyReference.cache
+D:\DotNet\DataQuantProject\Vts.Entites\obj\Debug\Vts.Entites.csproj.CoreCompileInputs.cache
+D:\DotNet\DataQuantProject\Vts.Entites\obj\Debug\Vts.Entites.dll
+D:\DotNet\DataQuantProject\Vts.Entites\obj\Debug\Vts.Entites.pdb

@@ -1,0 +1,48 @@
+﻿@model Vts.Entites.User
+
+@{
+    ViewBag.Title = "User Details";
+}
+
+<h1>@ViewBag.PageTitle </h1>
+<hr />
+<table class="table table-hover table-striped">
+    <tbody>
+        <tr>
+            <th>User Id</th>
+            <td>@Model.UserId</td>
+        </tr>
+        <tr>
+            <th>User Name</th>
+            <td>@Model.Name</td>
+        </tr>
+        <tr>
+            <th>Mobile</th>
+            <td>@Model.Mobile</td>
+        </tr>
+        <tr>
+            <th>Organization</th>
+            <td>@Model.Organization</td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td>@Model.Address</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>@Model.Email</td>
+        </tr>
+        <tr>
+            <th>Phone No</th>
+            <td>@Model.Location</td>
+        </tr>
+
+        <tr>
+            <th>Logo</th>
+            <td>
+                <img src="~/@Model.Photograph" alt="@Model.Name" />
+            </td>
+        </tr>
+    </tbody>
+</table>
+

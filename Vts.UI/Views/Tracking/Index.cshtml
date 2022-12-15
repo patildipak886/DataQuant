@@ -1,0 +1,48 @@
+﻿@using System.Data;
+@model System.Data.DataTable
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>
+    @Html.ActionLink("CreateNewTracking", "Create", "Tracking", new { @class = "btn btn-dark" })
+</h2>
+<div class="container-fluid">
+    <table class="table table-hover table-striped">
+        <thead>
+            <tr>
+                <th>DeviceId</th>
+                <th>Ignition</th>
+                <th>PowerCut</th>
+                <th>BoxOpen</th>
+                <th>Odometer</th>
+                <th>Speed</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (DataRow row in Model.Rows)
+            {
+                <tr>
+                    <td>@row["DeviceId"]</td>
+                    <td>@row["Ignition"]</td>
+                    <td>@row["PowerCut"]</td>
+                    <td>@row["BoxOpen"]</td>
+                    <td>@row["Odometer"]</td>
+                    <td>@row["Speed"]</td>
+                    
+                    <td>
+                        @Html.ActionLink("Details", "Details", new { id = row["DeviceId"] }, new { @class = "btn btn-dark" })
+                        &nbsp;&nbsp;
+                        @Html.ActionLink("Update", "Update", new { id = row["DeviceId"] }, new { @class = "btn btn-dark" })
+                        &nbsp;&nbsp;
+                        @Html.ActionLink("delete", "Delete", new { id = row["DeviceId"] }, new { @class = "btn btn-dark" })
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+

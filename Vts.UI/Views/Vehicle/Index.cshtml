@@ -1,0 +1,46 @@
+﻿@using System.Data;
+@model System.Data.DataTable
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>
+    @Html.ActionLink("CreateNewVehicle", "Create", "Vehicle", new { @class = "btn btn-dark" })
+</h2>
+<div class="container-fluid">
+    <table class="table table-hover table-striped">
+        <thead>
+            <tr>
+                <th>VehicleNumber</th>
+                <th>VehicleType</th>
+                <th>ChassisNumber</th>
+                <th>EngineNumber</th>
+                <th>ManufacturingYear</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (DataRow row in Model.Rows)
+            {
+                <tr>
+                    <td>@row["VehicleNumber"]</td>
+                    <td>@row["VehicleType"]</td>
+                    <td>@row["ChassisNumber"]</td>
+                    <td>@row["EngineNumber"]</td>
+                    <td>@row["ManufacturingYear"]</td>
+                    
+                    <td>
+                        @Html.ActionLink("Details", "Details", new { id = row["VehicleNumber"] }, new { @class = "btn btn-dark" })
+                        &nbsp;&nbsp;
+                        @Html.ActionLink("Update", "Update", new { id = row["VehicleNumber"] }, new { @class = "btn btn-dark" })
+                        &nbsp;&nbsp;
+                        @Html.ActionLink("delete", "Delete", new { id = row["VehicleNumber"] }, new { @class = "btn btn-dark" })
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+

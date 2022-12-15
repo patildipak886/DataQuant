@@ -1,0 +1,114 @@
+﻿@model Vts.Entites.Vehicle
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Vehicle</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VehicleNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VehicleNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VehicleType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VehicleType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChassisNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChassisNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EngineNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EngineNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ManufacturingYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ManufacturingYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LoadcarryingCapacity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LoadcarryingCapacity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MakeOfVehicle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MakeOfVehicle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModelNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModelNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BodyType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BodyType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrganizationName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrganizationName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeviceId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeviceId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
